@@ -102,7 +102,7 @@ fun RegisterButtons(
                         usernameString = it
                     },
                     placeholder = {
-                        Text(text = "Username")
+                        Text(text = "Username", color = Color.Gray)
                     },
                     singleLine = true,
                     colors = TextFieldDefaults.textFieldColors(
@@ -113,7 +113,8 @@ fun RegisterButtons(
                     leadingIcon = {
                         Icon(
                             imageVector = Icons.Default.Person,
-                            contentDescription = null
+                            contentDescription = null,
+                            tint = Color.Gray
                         )
                     },
                     modifier = Modifier
@@ -131,7 +132,7 @@ fun RegisterButtons(
                         emailString = it
                     },
                     placeholder = {
-                        Text(text = "Email")
+                        Text(text = "Email", color = Color.Gray)
                     },
                     singleLine = true,
                     colors = TextFieldDefaults.textFieldColors(
@@ -142,7 +143,8 @@ fun RegisterButtons(
                     leadingIcon = {
                         Icon(
                             imageVector = Icons.Default.Email,
-                            contentDescription = null
+                            contentDescription = null,
+                            tint = Color.Gray
                         )
                     },
                     keyboardOptions = KeyboardOptions(
@@ -161,7 +163,7 @@ fun RegisterButtons(
                         passwordString = it
                     },
                     placeholder = {
-                        Text(text = "Password")
+                        Text(text = "Password", color = Color.Gray)
                     },
                     shape = RoundedCornerShape(bottomEndPercent = 100),
                     singleLine = true,
@@ -173,7 +175,8 @@ fun RegisterButtons(
                     leadingIcon = {
                         Icon(
                             imageVector = Icons.Default.Lock,
-                            contentDescription = null
+                            contentDescription = null,
+                            tint = Color.Gray
                         )
                     },
                     visualTransformation = PasswordVisualTransformation(),
@@ -215,7 +218,7 @@ fun RegisterButtons(
         Spacer(modifier = Modifier.height(30.dp))
         Button(
             modifier = Modifier
-                .fillMaxWidth(0.3f)
+                .fillMaxWidth(0.35f)
                 .align(Alignment.End)
                 .shadow(
                     elevation = 8.dp,

@@ -105,7 +105,7 @@ fun LoginButtons(
                             usernameString = it
                         },
                         placeholder = {
-                            Text(text = "username")
+                            Text(text = "username", color = Color.Gray)
                         },
                         singleLine = true,
                         colors = TextFieldDefaults.textFieldColors(
@@ -116,7 +116,8 @@ fun LoginButtons(
                         leadingIcon = {
                             Icon(
                                 imageVector = Icons.Default.Person,
-                                contentDescription = null
+                                contentDescription = null,
+                                tint = Color.Gray
                             )
                         },
                         modifier = Modifier
@@ -134,7 +135,7 @@ fun LoginButtons(
                             passwordString = it
                         },
                         placeholder = {
-                            Text(text = "password")
+                            Text(text = "password", color = Color.Gray)
                         },
                         shape = RoundedCornerShape(bottomEndPercent = 100),
                         singleLine = true,
@@ -146,7 +147,8 @@ fun LoginButtons(
                         leadingIcon = {
                             Icon(
                                 imageVector = Icons.Default.Lock,
-                                contentDescription = null
+                                contentDescription = null,
+                                tint = Color.Gray
                             )
                         },
                         visualTransformation = PasswordVisualTransformation(),
